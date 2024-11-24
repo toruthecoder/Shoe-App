@@ -1,4 +1,6 @@
 <?php
+
+//I have change the name of this file from php to html because github pages dont support php format so the newsletter functionalibility wont work.
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
