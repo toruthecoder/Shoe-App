@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contact Info Start */
+
+.wrapper{
+    width: 70vw;
+    height: 70vh;  
+    background-color: #F27405;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: 10px 10px 30px 0.1px rgba(0, 0, 0, 0.3);
+}   
+
+.container1 h1{
+    position: absolute;
+    top: 200px;
+}
+
+.name, .email, .company{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Contact Info End */
+
+.heading h2{
+    margin-top: 190px;
+}   
+
+
+@media (max-width: 480px){
+    
+/* Contact Info Start */
+
+.wrapper{
+    width: 90vw;
+    height: 60vh;  
+    background-color: #F27405;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: 10px 10px 30px 0.1px rgba(0, 0, 0, 0.3);
+    margin-top: 80px;
+    margin-right: 100px;
+}   
+
+.container1 h1{
+    position: absolute;
+    top: 150px;
+}
+
+.name, .email, .company{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Contact Info End */
+
+}

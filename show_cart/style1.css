@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Agdasima", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+button{
+    cursor: pointer;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.icon{
+    margin-left: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.icon button{
+    border: none;
+    font-size: 1.5rem;
+    background-color: #fff;
+}
+
+.logo{
+    margin-right: 490px;
+    margin-top: -5px;
+    font-family: "Agdasima", sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cart-items{
+    font-family: "Agdasima", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 1.3rem;
+}
+
+.headings{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.headings h2:first-child{
+    margin-right: 440px;
+}
+
+.headings h2:nth-child(2){
+    margin-right: 160px;
+}
+
+.Information{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 13px;
+}
+
+.items{
+    width: 96vw;
+    background-color: aliceblue ;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.items::-webkit-scrollbar {
+    display: none; 
+}
+
+.sub-total{
+    display: flex;
+}
+
+.sales-tax{
+    display: flex;
+}
+
+.grand-total{
+    display: flex;
+}
+
+.total1 span{
+    margin-left: 430px;
+}
+
+.total1 a{
+    margin-left: 260px;
+}
+
+.sales-tax span{
+    margin-left: 422px;
+}
+
+.grand-total span{
+    margin-left: 410px;
+}
+
+.total1{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: "Agdasima", sans-serif;
+    font-size: 1.3rem;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+
+
+.image{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;  
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image img{
+    width: 96px;
+}
+
+.quant{
+    width: 20px;
+    height: 20px;
+    border: 2px solid grey;
+}
+
+.proceed{
+    margin-bottom: 50px;
+}
+
+.proceed button{
+    margin-left: 420px;
+    margin-top: 50px;
+    padding: 7px 90px;   
+    font-size: 1.3rem;
+    background-color: rgb(118, 118, 250);
+    color: #fff;
+    box-shadow: 10px 10px 8px 1px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 480px){
+    .head{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .icon{
+        margin-left: 50px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .icon button{
+        border: none;
+        font-size: 3rem;
+        background-color: #fff;
+    }
+    
+    .logo{
+        margin-right: 70px;
+        margin-top: -5px;
+        font-family: "Agdasima", sans-serif;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    
+    .cart-items{
+        font-family: "Agdasima", sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        font-size: 1.3rem;
+    }
+    
+    .headings{
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: space-evenly;
+        margin-left: 50vw;
+        gap: 110px;
+    }
+    
+    .headings h2:first-child{
+        margin-right: 0px;
+    }
+    
+    .headings h2:nth-child(2){
+        margin-right: 0px;
+    }
+    
+    .Information{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 13px;
+    }
+    
+    .items{
+        width: 130vw;
+        background-color: aliceblue ;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    
+    .items::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .sub-total{
+        display: flex;
+    }
+    
+    .sales-tax{
+        display: flex;
+    }
+    
+    .grand-total{
+        display: flex;
+    }
+    
+    .total1 span{
+        margin-left: 0px;
+    }
+    
+    .total1 a{
+        margin-left: 0px;
+    }
+    
+    .sub-total span{
+        margin-left: 20px;
+    }
+
+    .sales-tax span{
+        margin-left: 20px;
+    }
+    
+    .grand-total span{
+        margin-left: 20px;
+    }
+    
+    .total1{
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: "Agdasima", sans-serif;
+        font-size: 2rem;
+        margin-left: 110px;
+    }
+    
+    .box{
+        width: 100px;
+        height: 300px;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+    }
+
+    .cart-item-wrapper {
+        margin-bottom: 15px;
+        width: 10vw;
+        width: 0vw;
+    }
+
+    .cart-item {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        width: 120vw;
+        margin-left: 10px;
+    }
+
+    .cart-item-content {
+        display: flex;
+        gap: 20px;
+        align-items: start;
+        width: 100vw;
+    }
+
+    .product-details {
+        flex-grow: 1;
+    }
+
+    .product-details h3{
+        position: relative;
+        top: 40px;
+    }
+
+    .product-details h2{
+        position: relative;
+        top: 40px;
+    }
+
+    .quantity-controls {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+        position: relative;
+        top: 10px;
+        left: 60%;
+    }
+
+    .quantity-controls button {
+        background: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px 12px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: background-color 0.2s;
+    }
+
+    .quantity-controls button:hover {
+        background: #e0e0e0;
+    }
+
+    .quantity {
+        font-size: 16px;
+        min-width: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .total {
+        font-weight: bold;
+        margin-top: 0px;
+        font-size: 1.1rem;
+        position: relative;
+        left: 65%;
+        top: 10px;
+    }
+
+    .image img {
+        border-radius: 4px;
+    }
+
+    /* Custom scrollbar styles */
+    .items::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .items::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+    }
+
+    .items::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+
+    .items::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }   
+    
+    
+    .image{
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;  
+        position: relative;
+        top: 5px;
+        margin-left: 10px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .image img{
+        width: 96px;
+    }
+    
+    .quant{
+        width: 20px;
+        height: 20px;
+        border: 2px solid grey;
+    }
+    
+    .proceed{
+        margin-bottom: 50px;
+    }
+    
+    .proceed button{
+        margin-left: 110px;
+        margin-top: 20px;
+        padding: 7px 90px;   
+        font-size: 2rem;
+        background-color: rgb(118, 118, 250);
+        color: #fff;
+        box-shadow: 10px 10px 8px 1px rgba(0,0,0,0.2);
+    } 
+    .cart-item-wrapper{
+        width: 130vw;
+    }
+}
