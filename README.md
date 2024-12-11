@@ -5,3 +5,5 @@ Features this website contains
 • Interactive footer.
 • Fully functional search menu.
 • Interactive cart.
+• Fully Functional Newsletter but it wont work on github 
+  because github dont support php format files. 
