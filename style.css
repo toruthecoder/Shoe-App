@@ -370,129 +370,128 @@ button {
 /* Header End */
 
 /* For Every product card */
-
-
+/* Updated Card Styles - Square Design */
 .container1 {
     display: flex;
-}
-
-.text2 {
-    font-size: 2rem;
-    margin-left: 10vw;
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .card {
-    color: var(--texts-colors);
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 280px;
+    height: 400px;
+    margin-bottom: 30px;
     position: relative;
-    width: 25dvw;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    margin-left: 60px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .author {
-    background-color: var(--backgrounds-colors);
-    width: 160px;
-    height: 50px;
+    background-color: #f8f8f8;
+    padding: 10px 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
-    padding: 10px;
-    border-top-left-radius: var(--borders-radius);
-    border-top-right-radius: var(--borders-radius);
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #666;
 }
 
 .image {
-    background-color: var(--backgrounds-colors);
-    border-top-right-radius: var(--borders-radius);
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 .image img {
-    width: 19vw;
-    margin-top: 15px;
-    border-radius: 3px;
-    background-color: var(--backgrounds-colors);
-    margin-right: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
-.name {
-    font-weight: bold;
+.image img:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    padding: 15px;
+    flex-grow: 1;
 }
 
 .name1 {
     font-weight: bold;
-    margin-left: 20px;
-    padding-top: 20px;
-}
-
-.info {
-    background-color: var(--backgrounds-colors);
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
 }
 
 .price {
     font-weight: bold;
-    margin-left: 20px;
-    padding-top: 10px;
+    color: #e74c3c;
+    font-size: 18px;
 }
 
 .more {
-    background-color: var(--backgrounds-colors);
-    border-bottom-left-radius: var(--borders-radius);
-    border-bottom-right-radius: var(--borders-radius);
-    padding-top: 30px;
-    padding-bottom: 10px;
-    display: flex;
-    padding-left: 30px;
-}
-
-.but {
-    display: flex;
-    gap: 5px;
-}
-
-.but button:nth-child(1) {
-    color: var(--texts-colors);
-    background-color: var(--backgrounds-colors);
-    padding: 10px 10px;
-    margin-left: 38px;
-    margin-bottom: 20px;
-}
-
-.card::before {
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 16px;
-    width: 80px;
-    height: 50px;
-    content: '';
-    border-bottom-left-radius: var(--borders-radius);
-    border-top-left-radius: 0px;
-    box-shadow: -15px 15px 3px var(--backgrounds-colors);
-}
-
-.card::after {
-    background-color: var(--backgrounds-colors);
-    position: absolute;
-    top: 0;
-    right: -3px;
-    width: 9vw;
-    height: 40px;
-    border-radius: 50px;
+    padding: 15px;
+    border-top: 1px solid #eee;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 16px;
+}
+
+.but button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.but button:hover {
+    background-color: #e74c3c;
+}
+
+/* Remove the decorative pseudo-elements */
+.card::before, .card::after {
+    display: none;
+}
+
+/* Update pre-loader for new layout */
+.pre-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
 }
 
 @container style(--ispopular: true) {
