@@ -450,8 +450,6 @@ button {
     border-top: 1px solid #eee;
     display: flex;
     justify-content: center;
-    padding-bottom: 0; 
-    margin-bottom: 0;
 }
 
 .but button {
@@ -464,7 +462,6 @@ button {
     font-size: 14px;
     transition: background-color 0.3s;
     width: 100%;
-    margin-bottom: 0;
 }
 
 .but button:hover {
@@ -504,7 +501,6 @@ button {
 
     .more {
         box-shadow: 0 7px 0 #ff6723;
-        padding-bottom: 0;
     }
 }
 
@@ -516,7 +512,6 @@ button {
 
     .more {
         box-shadow: 0 7px 0 #00a6ed;
-        padding-bottom: 0;
     }
 }
 
@@ -527,7 +522,6 @@ button {
 
     .more {
         box-shadow: 0 7px 0 #ed0000;
-        padding-bottom: 0;
     }
 }
 
